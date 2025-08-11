@@ -1,0 +1,173 @@
+@import url(header.css);
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Lexend Exa", sans-serif;
+  background: #ffffff;
+    overflow: hidden; /* bloqueia a rolagem */
+}
+
+/* Wrapper para centralizar vertical e horizontalmente */
+.wrapper {
+  height: 100vh; /* ocupa a altura total da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical */
+  align-items: center; /* horizontal */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+/* Título */
+.page-title {
+  font-size: 2rem;
+  color: #003EA0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Container maior */
+.container {
+  background: white;
+  padding: 60px 50px; 
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 380px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+  margin-bottom:40px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown),
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #003EA0;
+}
+
+label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  color: #515151;
+  pointer-events: none;
+}
+
+input:focus {
+  border-bottom-width: 2px;
+  border-bottom-color: #003EA0;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #014EC6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003EA0;
+}
+
+.switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #014EC6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+.img-esquerda {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  max-width: 30vw;
+  height: auto;
+  margin-bottom: -30px;
+}
+
+.img-direita {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  max-width: 30vw;
+  height: auto;
+   margin-bottom: -30px;
+}
+
+.peixe-esquerda-meio {
+  position: fixed;
+  left: 200px;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 150px;
+  z-index: 1;
+}
+
+.peixe-esquerda-meio img {
+  width: 200px;
+  height: auto;
+}
+
+.imagem-sobre-direita {
+  position: fixed;
+  right: 240px;     
+  bottom: 50%;      
+  transform: translateY(50%);
+  width: 200px;     
+  z-index: 1;      
+}
+
+.imagem-sobre-direita img {
+  width: 100%;
+  height: auto;
+}
